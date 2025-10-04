@@ -63,6 +63,7 @@ text
 
 ## 📁 Project Structure
 
+```
 resume-analyzer/
 ├── backend/ # Spring Boot Application
 │ ├── src/main/java/
@@ -93,7 +94,7 @@ resume-analyzer/
 │ ├── package.json # Node dependencies
 │ └── vite.config.js # Vite configuration
 └── README.md # Project documentation
-
+```
 text
 
 ## 🚀 Quick Start
