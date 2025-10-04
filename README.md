@@ -264,23 +264,12 @@ text
 4. **Push** to the branch (`git push origin feature/amazing-feature`)
 5. **Open** a Pull Request
 
-## 📝 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
 ## 👨‍💻 Author
 
 **Kasturi Sanyal**
 - GitHub: [@Kasturi1617](https://github.com/Kasturi1617)
 - LinkedIn: [Kasturi Sanyal](https://linkedin.com/in/kasturi-sanyal)
 - Email: kasturisanyal3@gmail.com
-
-## 🙏 Acknowledgments
-
-- **Spring Boot Team** - For the excellent framework
-- **React Team** - For the powerful UI library  
-- **FastAPI** - For the high-performance Python framework
-- **Open Source Community** - For inspiration and support
 
 ## 🔮 Future Enhancements
 
