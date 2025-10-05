@@ -29,18 +29,32 @@ An intelligent full-stack application that analyzes resumes using AI-powered alg
 
 ## 🏗️ Architecture
 
-┌─────────────────┐ ┌─────────────────┐ ┌─────────────────┐
-│ React Client │◄──►│ Spring Boot API │◄──►│ FastAPI NLP │
-│ (Frontend) │ │ (Backend) │ │ (PDF Parser) │
-└─────────────────┘ └─────────────────┘ └─────────────────┘
-│ │ │
-│ │ │
-┌────▼────┐ ┌──────▼──────┐ ┌───────▼───────┐
-│ Vite │ │ Maven │ │ Python │
-│ Build │ │ Build │ │ uvicorn │
-└─────────┘ └─────────────┘ └───────────────┘
+```mermaid
+flowchart LR
 
-text
+    %% Frontend
+    subgraph F[Frontend]
+        A["🖥️ React Client<br>(Vite Build)"]
+    end
+    
+    %% Backend
+    subgraph B[Backend]
+        B1[" Spring Boot API<br>(Maven Build)"]
+    end
+    
+    %% NLP Service
+    subgraph N[NLP / PDF Service]
+        N1["🐍 FastAPI NLP<br>(Uvicorn Server)"]
+    end
+    
+    %% Connections
+    A <--> B1
+    B1 <--> N1
+    
+    %% Styling
+    classDef node fill:#e3f2fd,stroke:#1565c0,stroke-width:1px,color:#0d47a1,font-weight:bold;
+    class A,B1,N1 node;
+```
 
 ## 🛠️ Tech Stack
 
